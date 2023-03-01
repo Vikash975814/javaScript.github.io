@@ -7,3 +7,6 @@
  var c=a;
  a=b;
  b=c;
+console.log("After swap values");
+console.log("a is: "+a);
+ console.log("b is: "+b);
