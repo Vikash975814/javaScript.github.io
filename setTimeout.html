@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <style>
+        body{
+            background-color: red;
+        }
+        #btn{
+      
+position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+        
+    </style>
+</head>
+<body>
+    <div class="main-div">
+        <div>
+            <p>
+               <h1> want to know my name?</h1>
+            </p>
+            <p id="showmyname"></p>
+            <br>
+            <button id="btn">click here</button>
+        </div>
+    </div>
+    <script>
+        const myname=document.querySelector('#showmyname');
+        const btn=document.querySelector('#btn');
+        const showmyname=()=>{
+            myname.innerHTML="Loading...."
+            setTimeout(()=>{
+                myname.innerHTML="Vikash Agrawal"
+            },1000)
+        }
+        btn.addEventListener('click',showmyname);
+    </script>
+</body>
+</html>
